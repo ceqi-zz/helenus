@@ -1,0 +1,16 @@
+test-classes/
+www-test/
+gwt-unitCache/
+war/footballbettingrecommmendation/
+war/WEB-INF/deploy/
+war/WEB-INF/lib/
+
+
+*.class
+
+*.jar
+
+hs_err_pid*
+
+
+.model
