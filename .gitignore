@@ -4,7 +4,7 @@
 test-classes/
 www-test/
 gwt-unitCache/
-war/footballbettingrecommmendation/
+war/footballbettingrecommendation/
 war/WEB-INF/deploy/
 war/WEB-INF/classes/
 *.class
@@ -16,7 +16,7 @@ war/WEB-INF/lib/
 
 #application generated model files#
 ###################################
-.model
+*.model
 
 #virtual machine crash logs#
 ############################
