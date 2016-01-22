@@ -131,7 +131,7 @@ public class Helenus {
 	public void createModel(String modelName) throws IOException {
 
 		File file = new File(modelName);
-		modelPath = file.getPath();
+		modelPath = file.getPath() + ".model";
 		ModelSerializer.writeBinary(modelPath, learner);
 	}
 

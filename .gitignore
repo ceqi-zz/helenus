@@ -1,16 +1,23 @@
+
+#Compiled source#
+#################
 test-classes/
 www-test/
 gwt-unitCache/
 war/footballbettingrecommmendation/
 war/WEB-INF/deploy/
-war/WEB-INF/lib/
-
-
+war/WEB-INF/classes/
 *.class
 
+#Packages / libs#
+#################
+war/WEB-INF/lib/
 *.jar
 
-hs_err_pid*
-
-
+#application generated model files#
+###################################
 .model
+
+#virtual machine crash logs#
+############################
+hs_err_pid*

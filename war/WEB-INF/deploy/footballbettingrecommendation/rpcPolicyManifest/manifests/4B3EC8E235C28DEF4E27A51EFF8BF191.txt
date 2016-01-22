@@ -1,2 +1,0 @@
-serviceClass: com.ceqi.footballBettingRecommendation.client.FootballGamesService
-path: D3CC3B3595EBD18C55E648137CF74295.gwt.rpc
