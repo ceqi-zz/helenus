@@ -1,0 +1,10 @@
+package com.ceqi.footballBettingRecommendation.server.rawStats;
+
+import com.google.common.base.Splitter;
+
+public abstract class AbstractGameParser {
+	protected final Splitter onComma = Splitter.on(",");
+	// betting odds are not included
+	protected final int limitSize = 23;
+
+}

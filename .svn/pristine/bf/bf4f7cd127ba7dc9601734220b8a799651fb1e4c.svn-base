@@ -1,0 +1,59 @@
+package com.ceqi.footballBettingRecommendation.server.matchStats;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+/**
+ * 
+ * Fetches csv files from football-data.co.uk
+ * 
+ * @author ce
+ *
+ */
+public class FootballData {
+
+	// public static String getData(String season, String league)
+	// throws IOException {
+	//
+	// File file = new File(
+	// "/home/ce/java_workspace/algorithmBetting/src/resource/"
+	// + season + league + ".csv");
+	// URL website = new URL("http://www.football-data.co.uk/mmz4281/"
+	// + season + "/" + league + ".csv");
+	// ReadableByteChannel channel = Channels.newChannel(website.openStream());
+	// FileOutputStream outputStream = new FileOutputStream(file);
+	// outputStream.getChannel().transferFrom(channel, 0, Long.MAX_VALUE);
+	// outputStream.close();
+	//
+	// return season + league + ".csv";
+	// }
+	/**
+	 * 
+	 * @param season
+	 *            example: season 2015-2016 is 1516
+	 * @param league
+	 *            example: england premier league is E0
+	 * @throws IOException
+	 */
+	public static BufferedReader getData(String season, String league) {
+		BufferedReader bufReader = null;
+		try {
+			URL url = new URL("http://www.football-data.co.uk/mmz4281/"
+					+ season + "/" + league + ".csv");
+			InputStreamReader inStream = new InputStreamReader(url.openStream());
+			bufReader = new BufferedReader(inStream);
+			return bufReader;
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+			throw new RuntimeException("Error reading data...");
+		} catch (IOException e) {
+			e.printStackTrace();
+			throw new RuntimeException("Error reading data...");
+		}
+
+	}
+
+}
