@@ -14,6 +14,15 @@ http://mahout.apache.org/general/downloads.html
 Install gwt sdk, deteails can be found from the link below:
 http://www.gwtproject.org/doc/latest/tutorial/
 
+Betfair account and an application key are needed to fetch fixture, 
+https://developer.betfair.com/get-started/
+then put thme in war/config.properties file, the file format is (or any format that a property file accepts):
+
+username=xxx
+password=xxx
+X-Application=xxx
+
+
 ### Compile
 
 Put these libs under war/WEB-INF/lib/ folder and add them in classpath:
