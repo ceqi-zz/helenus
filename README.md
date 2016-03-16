@@ -17,7 +17,7 @@ http://www.gwtproject.org/doc/latest/tutorial/
 Betfair account and an application key are needed to fetch fixture, 
 https://developer.betfair.com/get-started/
 
-then put thme in war/config.properties file, the file format is (or any format that a property file accepts):
+then put them in war/config.properties file, the file format is (or any format that a property file accepts):
 ```
 username=xxx
 password=xxx
